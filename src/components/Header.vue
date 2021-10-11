@@ -12,7 +12,10 @@
                 <section id="page-navigation">
                     <ul>
                         <li v-for="(headerElement,index) in headerNavigationList" :key="headerElement.name+index">
-                            <a :href="headerElement.link">{{headerElement.name}} <span v-if="headerElement.state==true" class="yellow-popup">new</span></a>
+                            <a :href="headerElement.link">
+                                {{headerElement.name}}
+                                <span v-if="headerElement.state==true" class="yellow-popup">new</span>
+                            </a>
                         </li>
                     </ul>
                     <button>Schedule a workout</button>
@@ -45,7 +48,7 @@ export default {
 
 header{
     background-color: $header_background_color;
-    height: 15vh;
+    height: 13vh;
     color: $header_primary_text_color;
     font-size: 20px;
 
@@ -98,10 +101,8 @@ header{
                                 justify-content: center;
                                 align-items: center;
                                 background-color: $primary_background_popup_color;
-                                width: 55px;
-                                height: 30px;
+                                padding: 7px;
                                 border-radius: 5px;
-                                vertical-align: bottom;
                             }
                         }
                         :hover a {
