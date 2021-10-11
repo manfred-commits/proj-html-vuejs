@@ -10,6 +10,8 @@
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import '@fortawesome/fontawesome-free';
+
 
 export default {
   name: 'App',
@@ -22,6 +24,9 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import './assets/style/general';
+
 #app {
   
 }
