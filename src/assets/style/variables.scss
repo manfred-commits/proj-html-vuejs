@@ -1,0 +1,42 @@
+// general rules
+
+
+// button section
+$primary_btn_color:#f3ffff;
+
+$secondary_btn_color:#93939f;
+
+$primary_btn_background_color:#4154ff;
+
+// /button section
+
+
+// popup section
+
+$primary_background_popup_color:#fff941;
+
+$primary_background_popup_color_text:black;
+
+
+// /popup section
+
+
+// /general rules
+
+
+
+
+// header section
+$header_background_color:#060607;
+$header_primary_text_color:#93939f;
+$header_hover_primary_text_color:#fff;
+
+
+
+@mixin header_components_verticalization {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+// /header section
