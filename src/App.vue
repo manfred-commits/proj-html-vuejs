@@ -62,17 +62,8 @@ export default {
 <style lang="scss">
 
 @import './assets/style/general';
+@import './assets/style/variables.scss';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
-
-button{
-  min-width: 270px;
-  min-height: 60px;
-  border-radius: 2.8125rem;
-  color: $primary_btn_color;
-  background-color: $primary_btn_background_color;
-  border: 0;
-  margin: 0 15px;
-}
 
 
 #app {
