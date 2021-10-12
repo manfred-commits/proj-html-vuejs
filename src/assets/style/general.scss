@@ -9,4 +9,42 @@ button{
     background-color: $primary_btn_background_color;
     border: 0;
     margin: 0 15px;
+    font-size: 22px;
+    font-weight: bold;
+
 }
+
+input{
+    min-width: 700px;
+    min-height: 60px;
+    border-radius: 2.8125rem;
+    font-size: 22px;
+    padding-left: 30px;
+    margin: 20px 0 40px;
+}
+
+
+
+
+.fitness-hr{
+    color: yellow;
+    font-size: 35px;
+    position: relative;
+    height: 120px;
+    .icon-formatting-left,
+    .icon-formatting-center,
+    .icon-formatting-right{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 20px;
+    }
+    .icon-formatting-center{
+        left: 45px;
+    }
+    .icon-formatting-right{
+        left: 68px;
+    }
+}
+
+
