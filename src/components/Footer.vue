@@ -18,7 +18,10 @@
               <ul>
                   <li v-for="(content,index) in footerData.recentPostsList" :key="content.content+index">
                       <a :href="content.link">
-                        <h5>{{content.content}}</h5>
+                        <h5>
+                            <i class="fas fa-chevron-right"></i>
+                            {{content.content}}
+                        </h5>
                       </a>
                   </li>
               </ul>
@@ -30,15 +33,19 @@
                 {{footerData.contactInfo.address}}
             </div>
             <div class="contact-phone">
-                <strong>Mobile: {{footerData.contactInfo.mobilePhone}}</strong>
+                Mobile: {{footerData.contactInfo.mobilePhone}}
             </div>
             <div class="contact-email">
-                <strong>Email: {{footerData.contactInfo.email}}</strong>
+                Email: {{footerData.contactInfo.email}}
             </div>
 
 
           </div>
       </div>
+
+      <section class="footer-bottom">
+          ©Copyright 2012 - 2021 | Avada Theme by <a href="#">ThemeFusion</a>| All Rights Reserved | Powered by <a href="#">WordPress</a> 
+      </section>
   </footer>
 </template>
 
@@ -56,7 +63,7 @@ export default {
 
 footer{
     background-color: $header_background_color;
-    padding: 200px 0;
+    padding: 200px 0 0;
     color: $footer_primary_text_color;
 
     .page-margins{
@@ -82,6 +89,7 @@ footer{
             }
             .description-text-footer{
                 text-align: center;
+                color: $footer_secondary_text_color;
                 width: 100%;
                 padding-bottom: 50px;
             }
@@ -100,9 +108,57 @@ footer{
         }
         .col-center{
             
+            h4{
+                font-size: 28px;
+                width: 100%;
+                text-align: center;
+            }
+
+            ul{
+                list-style: none;
+                margin: 40px 0;
+                padding: 0;
+                text-align: center;
+                li{
+                    padding: 20px;
+                    a{
+                        color: $footer_primary_text_color;
+                        text-decoration: none;
+                        h5{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
         }
         .col-right{
-            
+            font-size: 25px;
+
+            h5,.contact-address,.contact-phone,.contact-email{
+                text-align: center;
+                width: 100%;
+            }
+            h5{
+                font-size: 28px;
+            }
+            .contact-address{
+                margin: 25px 0;
+                color: $footer_secondary_text_color;
+            }
+        }
+    }
+    .footer-bottom{
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid $footer_hr_color;
+        color: $footer_secondary_text_color;
+        font-size: 20px;
+        padding: 60px 0;
+        margin-top: 100px;
+
+        a{
+            text-decoration: none;
+            color: $footer_primary_text_color;
         }
     }
 }
