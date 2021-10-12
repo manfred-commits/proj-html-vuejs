@@ -134,7 +134,7 @@ export default {
     background-color: white;
     border-radius: 50%;
     a{
-        font-size: 40px;
+        font-size: 60px;
         vertical-align: middle;
         margin: auto;
         text-decoration: none;
