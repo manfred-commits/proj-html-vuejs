@@ -61,7 +61,31 @@
     </section>
     <!-- mailing list section -->
 
+    <!-- inspiration fail section -->
+    <section class="inspirational-fail">
+        <div class="page-margins section-formatting">
+            <h2>"I've failed over and over again in my life. And that is why I succeed."</h2>
 
+            <div class="inspirational-hr">
+                <i class="icon-formatting-left fas fa-chevron-up"></i>
+                <i class="icon-formatting-center fas fa-chevron-up"></i>
+                <i class="icon-formatting-right fas fa-chevron-up"></i>
+            </div>
+
+            <div class="description-text">
+                Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis.
+            </div>
+
+            <button class="button-page">
+                Buy Avada today 
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+
+        </div>
+
+    </section>
+    <!-- inspiration fail section -->
 
 
   </main>
@@ -76,27 +100,6 @@ export default {
 <style lang="scss" scoped>
 
 @import '../assets/style/variables';
-
-
-.fitnes-professional{
-    background-image:linear-gradient(90deg, $header_background_color 47%, rgba(0, 0, 1, 0.1) 60%),url('../assets/images/slider82x-scaled.jpg');    
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    button{
-        margin-left: 0;
-    }
-    
-
-}
-.mailing-list{
-    background-image:linear-gradient(90deg, $header_background_color 47%, rgba(0, 0, 1, 0.1) 60%),url('../assets/images/banner1-2x.jpg');    
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
 
 .section-formatting{
 
@@ -119,8 +122,80 @@ export default {
         margin-bottom: 50px;
     }
     
+}
+
+.fitnes-professional{
+    background-image:linear-gradient(90deg, $header_background_color 47%, rgba(0, 0, 1, 0.1) 60%),url('../assets/images/slider82x-scaled.jpg');    
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    button{
+        margin-left: 0;
+    }
+    
 
 }
+.mailing-list{
+    background-image:linear-gradient(90deg, $header_background_color 47%, rgba(0, 0, 1, 0.1) 60%),url('../assets/images/banner1-2x.jpg');    
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.inspirational-fail{
+    background-image:linear-gradient(360deg, $header_background_color 5%, rgba(23, 23, 170, 0.1) 60%),url('../assets/images/banner2-2x.jpg');    
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .section-formatting{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 240px 0 100px;
+
+        h4,h2,.description-text{
+        width: 80%;
+        margin: auto;
+        }    
+
+        // custom hr for section
+        .inspirational-hr{
+            padding: 50px 0;
+            width: 100%;
+            position: relative;
+
+            .icon-formatting-left,
+            .icon-formatting-center,
+            .icon-formatting-right{
+                position: absolute;
+                color: $yellor_page_color;
+                font-size: 40px;
+                transform: translate(-50%,-50%);
+                top: 50%;
+                left: 50%;
+            }
+            .icon-formatting-center{
+                left: calc(50% + 27px);
+            }
+            .icon-formatting-right{
+                left: calc(50% + 54px);
+                
+            }
+        }    
+        .description-text{            
+            color: $mailing_primary_text_color;
+        }
+        .button-page{
+            margin: 50px 150px;
+        }
+    }
+}
+
 .play-button{
     position: absolute;
     transform: translate(-50%,-50%);
