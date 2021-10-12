@@ -59,7 +59,14 @@ header{
         justify-content: space-between;
     
         .left-col{
-    
+            height: 100%;
+            width: 18%;
+            img{
+                object-fit: contain;
+                width: 100%;
+                height:100%;
+            }
+
         }
 
         .right-col{
