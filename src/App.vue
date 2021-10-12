@@ -69,9 +69,8 @@ export default {
 #app {
   
   .page-margins{
-    width: 70%;
+    width: 80%;
     margin: auto;
-
 
   }
 
