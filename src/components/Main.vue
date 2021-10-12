@@ -27,6 +27,11 @@
                 <i class="fas fa-arrow-right"></i>
             </button>
         </div>
+        <div class="play-button">
+            <a href="#" class="play-icon">
+                <i class="fas fa-caret-right"></i>
+            </a>
+        </div>
 
     </section>
     <!-- /fitness list section -->
@@ -115,6 +120,25 @@ export default {
     }
     
 
+}
+.play-button{
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+    top: 50%;
+    left: 80%;
+    display: flex;
+    color: black;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    a{
+        font-size: 40px;
+        vertical-align: middle;
+        margin: auto;
+        text-decoration: none;
+    }
 }
 
 </style>

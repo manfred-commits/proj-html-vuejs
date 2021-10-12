@@ -123,7 +123,7 @@ export default {
   .page-margins{
     width: 80%;
     margin: auto;
-
+    position: relative;
   }
 
 }
