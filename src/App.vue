@@ -2,7 +2,7 @@
   <div id="app">
     <Header :headerNavigationList="navListHeader"/>
     <Main/>
-    <Footer/>
+    <Footer :footerData="footerInformations"/>
   </div>
 </template>
 
@@ -53,7 +53,59 @@ export default {
           link:'#',
           state:true,
         },
-      ]
+      ],
+      footerInformations:{
+        footerLinksList:[
+          {
+            name:'fab fa-facebook-f',
+            link:'#',
+          },
+          {
+            name:'fab fa-twitter',
+            link:'#',
+          },
+          {
+            name:'fab fa-youtube',
+            link:'#',
+          },
+          {
+            name:'fab fa-instagram',
+            link:'#',
+          },
+          {
+            name:'fab fa-linkedin',
+            link:'#',
+          },
+          
+        ],
+        recentPostsList:[
+          {
+            content:'The best protein shake',
+            link:'#'
+          },
+          {
+            content:'Ultimate cardio Workout',
+            link:'#'
+          },
+          {
+            content:'New juices available now',
+            link:'#'
+          },
+          {
+            content:'Tips to find training partners',
+            link:'#'
+          },
+          {
+            content:'20 best healthy recipes',
+            link:'#'
+          },
+        ],
+        contactInfo:{
+            address:'4746 Tipple Road Michigan 48449',
+            mobilePhone:'1.800.000.0000',
+            email:'info@your-company.com',
+          },
+      }
     }
   }
 }
