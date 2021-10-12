@@ -18,7 +18,7 @@
                             </a>
                         </li>
                     </ul>
-                    <button>Schedule a workout</button>
+                    <button class="button-header">Schedule a workout</button>
                     <i class="fas fa-shopping-cart icon-formatting"></i>
                     <i class="fas fa-search icon-formatting"></i>
                 </section>
