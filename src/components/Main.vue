@@ -267,34 +267,34 @@
 
             <div class="card-container">
                 <div class="icon-container">
-                    <i class="fas fa-stopwatch"></i>
+                    <i class="fas fa-dumbbell"></i>
                 </div>
-                <h3>Team training</h3>
-                <h4>Find a partner</h4>
+                <h3>Crossfit workout</h3>
+                <h4>Push your limits</h4>
 
                 <p class="description-text">
                     Vestibulum, curabitur eu sem nibh eltrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.
                 </p>
 
                 <h6>
-                    Find a partner
+                    Learn about Crossfit
                     <i class="fas fa-chevron-right"></i>
                 </h6>
             </div>
 
             <div class="card-container">
                 <div class="icon-container">
-                    <i class="fas fa-stopwatch"></i>
+                    <i class="fas fa-swimmer"></i>
                 </div>
-                <h3>Team training</h3>
-                <h4>Find a partner</h4>
+                <h3>Weight loss plan</h3>
+                <h4>Shed those pounds</h4>
 
                 <p class="description-text">
                     Vestibulum, curabitur eu sem nibh eltrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.
                 </p>
 
                 <h6>
-                    Find a partner
+                    Schedule a workout
                     <i class="fas fa-chevron-right"></i>
                 </h6>
             </div>
