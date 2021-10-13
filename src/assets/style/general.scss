@@ -25,6 +25,12 @@ button{
     min-width: 200px;
     min-height: 60px;
 }
+.button-page-2{
+    min-width: 200px;
+    min-height: 60px;
+    background-color: $primary_btn_2_color;
+    border: 2px solid $btn_2_border-color;
+}
 
 input{
     min-width: 500px;
