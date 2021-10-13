@@ -504,8 +504,10 @@
             <h4>Crosfit workout of the day</h4>
             <h5>November 15th,2019</h5>
             <h6>
-                View all videos
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <a href="#">
+                    View all videos
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
             </h6>
         </div>
 
@@ -1130,9 +1132,12 @@ export default {
             color: $best_of_day_h5_color;
         }
         h6{
-            font-size: 20px;
-            color: $best_of_day_h6_color;
-            cursor: pointer;
+           
+            a{
+                font-size: 20px;
+                color: $best_of_day_h6_color;
+                text-decoration: none;
+            }
         }
     }
     .section-formatting{
