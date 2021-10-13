@@ -188,22 +188,22 @@ export default {
 
 .section-formatting{
     
-    padding: 280px 0 280px;
+    padding: 120px 0 120px;
     h4,h2,.description-text{
         width: 60%;
     }
 
     h4{
-        font-size: 50px;
+        font-size: 30px;
         color: $mailing_secondary_text_color;
     }
     h2{
-        font-size: 140px;
+        font-size: 70px;
         color: $mailing_primary_text_color;
     }
     .description-text{
         color: $mailing_description_text_color;
-        font-size: 45px;
+        font-size: 25px;
         margin-bottom: 50px;
     }
     
@@ -228,12 +228,12 @@ export default {
     left: 80%;
     display: flex;
     color: black;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-color: white;
     border-radius: 50%;
     a{
-        font-size: 60px;
+        font-size: 50px;
         vertical-align: middle;
         margin: auto;
         text-decoration: none;
@@ -254,7 +254,7 @@ export default {
             flex-wrap: wrap;
             justify-content: space-between;
             position:relative;
-            top: -400px;
+            top: -180px;
 
             .basic-card{
                 display: flex;
@@ -262,6 +262,7 @@ export default {
 
                 position: relative;
                 width: calc(100% /3 - 80px);
+                height: 500px;
                 border-radius: 5px 5px 60px 0;
                 overflow: hidden;
 
@@ -279,8 +280,7 @@ export default {
                     display: flex;
                     flex-wrap: wrap;
                     align-content: flex-end;
-                    background-image:linear-gradient(360deg, $header_background_color -10%, rgba(0, 0, 1, 0.1) 60%);  
-                    // background-color: rgba(0, 0, 1, 0.3);
+                    background-image:linear-gradient(360deg, $header_background_color -5%, rgba(0, 0, 1, 0.1) 60%);  
 
                     h3,h5{
                         text-align: left;
@@ -290,12 +290,12 @@ export default {
                     h3{
                         color: white;
                         width: 100%;
-                        font-size: 60px;
+                        font-size: 35px;
                     }
                     h5{
                         color: yellow;
                         width: 100%;
-                        font-size: 40px;
+                        font-size: 25px;
 
                         margin-bottom: 15%;
 
@@ -306,17 +306,17 @@ export default {
                         .icon-formatting-left,
                         .icon-formatting-center,
                         .icon-formatting-right{
-                            font-size: 35px;
+                            font-size: 20px;
                             color: white;
                         }
                         .icon-formatting-left{
-                            left:100px;
+                            left:53px;
                         }
                         .icon-formatting-center{
-                            left: calc(100px + 23px);
+                            left: calc(53px + 14px);
                         }
                         .icon-formatting-right{
-                            left: calc(200px - 53px);
+                            left: calc(106px - 25px);
                             
                         }
                     }
@@ -327,7 +327,7 @@ export default {
 
         h2{
             width: 80%;
-            font-size: 100px;
+            font-size: 50px;
         }
         .fitness-hr{
             width: 100%;
@@ -337,18 +337,18 @@ export default {
             .icon-formatting-right{
                 position: absolute;
                 color: $yellor_page_color;
-                font-size: 60px;
+                font-size: 30px;
                 top: 50%;
                 
             }
             .icon-formatting-left{
-                left:calc(50% + -43px);
+                left:calc(50% + -22px);
             }
             .icon-formatting-center{
                 left: 50%;
             }
             .icon-formatting-right{
-                left: calc(50% + 43px);
+                left: calc(50% + 20px);
                 
             }
         }
@@ -357,10 +357,12 @@ export default {
             align-items: center;
             img{
                 border-radius: 50%;
+                object-fit: contain;
+                height: 60px;
             }
             h6{
-                font-size: 38px;
-                padding: 0 30px;
+                font-size: 20px;
+                padding: 0 15px;
                 color: white;
             }
             .location{
@@ -413,22 +415,25 @@ export default {
             .icon-formatting-right{
                 position: absolute;
                 color: $yellor_page_color;
-                font-size: 60px;
-                top: 50%;                
+                font-size: 30px;
+                top: 50%;
+                
             }
             .icon-formatting-left{
-                left:calc(50% + -43px);
+                left:calc(50% + -34px);
             }
             .icon-formatting-center{
-                left: 50%;
+                left:calc(50% + -13px);
+
             }
             .icon-formatting-right{
-                left: calc(50% + 43px);                
+                left: calc(50% + 8px);
+                
             }
         }    
         .description-text{            
             color: $mailing_primary_text_color;
-            font-size: 45px;
+            font-size: 25px;
         }
         .button-page{
             margin: 50px 150px;

@@ -63,7 +63,7 @@ export default {
 
 footer{
     background-color: $header_background_color;
-    padding: 200px 0 0;
+    padding: 100px 0 0;
     color: $footer_primary_text_color;
 
     .page-margins{
@@ -80,7 +80,7 @@ footer{
 
         }
         .col-left{
-            font-size: 25px;
+            font-size: 20px;
             img{
                 margin: 30px 0;
                 object-fit: cover;
@@ -98,7 +98,7 @@ footer{
                 text-align: center;
 
                 .social-link-formatting{
-                    font-size: 25px;
+                    font-size: 20px;
                     color: $mailing_secondary_text_color;
                     margin: 0 10px;
                 }
@@ -109,7 +109,7 @@ footer{
         .col-center{
             
             h4{
-                font-size: 28px;
+                font-size: 23px;
                 width: 100%;
                 text-align: center;
             }
@@ -120,26 +120,26 @@ footer{
                 padding: 0;
                 text-align: center;
                 li{
-                    padding: 20px;
+                    padding: 10px;
                     a{
                         color: $footer_primary_text_color;
                         text-decoration: none;
                         h5{
-                            font-size: 22px;
+                            font-size: 18px;
                         }
                     }
                 }
             }
         }
         .col-right{
-            font-size: 25px;
+            font-size: 18px;
 
             h5,.contact-address,.contact-phone,.contact-email{
                 text-align: center;
                 width: 100%;
             }
             h5{
-                font-size: 28px;
+                font-size: 23px;
             }
             .contact-address{
                 margin: 25px 0;
@@ -150,7 +150,7 @@ footer{
     .footer-bottom{
         text-align: center;
         width: 100%;
-        border-top: 1px solid $footer_hr_color;
+        border-top: 1px solid rgb(70, 70, 70);
         color: $footer_secondary_text_color;
         font-size: 20px;
         padding: 60px 0;

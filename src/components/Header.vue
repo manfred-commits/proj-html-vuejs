@@ -99,8 +99,8 @@ header{
                             
                             a{
                                 text-decoration: none;
-                                line-height: 16px;
                                 color: $header_primary_text_color;
+                                font-size: 20px;
                             }
                             .yellow-popup{
                                 display: inline-flex;
@@ -108,7 +108,7 @@ header{
                                 justify-content: center;
                                 align-items: center;
                                 background-color: $primary_background_popup_color;
-                                padding: 7px;
+                                padding: 5px;
                                 border-radius: 5px;
                             }
                         }
@@ -120,8 +120,8 @@ header{
     
                     
                     .icon-formatting{
-                    
-                        margin: 5px 20px;
+                        font-size: 20px;
+                        margin: 5px 10px;
                     }
                     .icon-formatting:last-child{
                         margin-right: 0;
