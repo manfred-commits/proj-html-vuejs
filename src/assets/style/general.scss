@@ -21,15 +21,21 @@ button{
     min-width: 150px;
     min-height: 50px;
 }
-.button-page{
+.button-page,
+.button-page-2,
+.button-page-3{
     min-width: 200px;
     min-height: 60px;
+
 }
 .button-page-2{
-    min-width: 200px;
-    min-height: 60px;
     background-color: $primary_btn_2_color;
     border: 2px solid $btn_2_border-color;
+}
+.button-page-3{
+    background-color: $primary_btn_3_color;        
+    color: $primary_btn_3_text_color;
+
 }
 
 input{
