@@ -245,6 +245,64 @@
     </section>
     <!-- mailing list section -->
 
+    <!-- cards list section -->
+    <section class="cards">
+        <div class="page-margins section-formatting">
+            <div class="card-container">
+                <div class="icon-container">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <h3>Team training</h3>
+                <h4>Find a partner</h4>
+
+                <p class="description-text">
+                    Vestibulum, curabitur eu sem nibh eltrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.
+                </p>
+
+                <h6>
+                    Find a partner
+                    <i class="fas fa-chevron-right"></i>
+                </h6>
+            </div>
+
+            <div class="card-container">
+                <div class="icon-container">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <h3>Team training</h3>
+                <h4>Find a partner</h4>
+
+                <p class="description-text">
+                    Vestibulum, curabitur eu sem nibh eltrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.
+                </p>
+
+                <h6>
+                    Find a partner
+                    <i class="fas fa-chevron-right"></i>
+                </h6>
+            </div>
+
+            <div class="card-container">
+                <div class="icon-container">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <h3>Team training</h3>
+                <h4>Find a partner</h4>
+
+                <p class="description-text">
+                    Vestibulum, curabitur eu sem nibh eltrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.
+                </p>
+
+                <h6>
+                    Find a partner
+                    <i class="fas fa-chevron-right"></i>
+                </h6>
+            </div>
+        </div>
+    </section>
+    <!-- cards list section -->
+
+
     <!-- inspiration fail section -->
     <section class="inspirational-fail">
         <div class="page-margins section-formatting">
@@ -626,6 +684,54 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     
+}
+
+.cards{
+    background-color: $card_sec_background_color;
+    .page-margins{
+        display: flex;
+        justify-content: space-between;
+
+
+        .card-container{
+            cursor: pointer;
+            width: calc(100% / 3 - 50px);
+            border: 3px solid $card_sec_card_border;
+            border-radius: 5px 5px 5px 5px;
+            color: $card_sec_primary_text_color;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 60px 0;
+
+            h3,h4,p,h6,.icon-container{
+                width: 100%;
+            }
+            .icon-container{
+                font-size: 70px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            h4{
+                font-size: 25px;
+                padding-bottom: 40px;
+                color: $card_sec_h4_text_color;
+            }
+            .description-text{
+                margin: auto;
+                width: 80%;
+                font-size: 20px;
+                padding-bottom: 40px;
+                color: $card_sec_description_text_color;
+            }
+            h6{
+                font-size: 18px;
+                
+            }
+        }
+    }
+
 }
 
 .inspirational-fail{
