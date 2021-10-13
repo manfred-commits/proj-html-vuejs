@@ -4,34 +4,40 @@
     <!-- fitness list section -->
     <section class="fitnes-professional">
         <div class="page-margins section-formatting">
-            <h4>Certified fitness professional</h4>
-            <h2>Take control of your health</h2>
+            <div class="left-col">
 
-            <div class="fitness-hr">
-                <i class="icon-formatting-left fas fa-chevron-up"></i>
-                <i class="icon-formatting-center fas fa-chevron-up"></i>
-                <i class="icon-formatting-right fas fa-chevron-up"></i>
+                <h4>Certified fitness professional</h4>
+                <h2>Take control of your health</h2>
+
+                <div class="fitness-hr">
+                    <i class="icon-formatting-left fas fa-chevron-up"></i>
+                    <i class="icon-formatting-center fas fa-chevron-up"></i>
+                    <i class="icon-formatting-right fas fa-chevron-up"></i>
+                </div>
+
+                <div class="description-text">
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.
+                </div>
+
+                <button class="button-page">
+                    <i class="fab fa-youtube"></i>
+                    Visit my YouTube channel
+                </button>
+
+                <button class="button-page-2">
+                    Buy Avada today
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
-
-            <div class="description-text">
-                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.
+            <div class="right-col">
+                <div class="play-button">
+                    <a href="#" class="play-icon">
+                        <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
             </div>
-
-            <button class="button-page">
-                <i class="fab fa-youtube"></i>
-                Visit my YouTube channel
-            </button>
-
-            <button class="button-page">
-                Buy Avada today
-                <i class="fas fa-arrow-right"></i>
-            </button>
         </div>
-        <div class="play-button">
-            <a href="#" class="play-icon">
-                <i class="fas fa-caret-right"></i>
-            </a>
-        </div>
+        
 
     </section>
     <!-- /fitness list section -->
@@ -61,7 +67,7 @@
                 </div>
                 <!-- /crossfit card -->
 
-                <!-- crossfit card -->
+                <!-- products card -->
                 <div class="basic-card">
                     <img src="../assets/images/box1-2x.jpg" alt="girl drinking">
 
@@ -78,9 +84,9 @@
 
                     </div>
                 </div>
-                <!-- /crossfit card -->
+                <!-- /products card -->
 
-                <!-- crossfit card -->
+                <!-- Team training card -->
                 <div class="basic-card">
                     <img src="../assets/images/box3-2x.jpg" alt="girl drinking">
 
@@ -97,7 +103,7 @@
 
                     </div>
                 </div>
-                <!-- /crossfit card -->
+                <!-- /Team training card -->
 
             </div>
             
@@ -109,7 +115,7 @@
                 <i class="icon-formatting-right fas fa-chevron-up"></i>
             </div>
 
-            <div class="testimanial-review">
+            <div class="testimonial-review">
                 <img src="../assets/images/avatar-1-2x.jpg" alt="brad johnson photo">
                 <h6>Brad Johnson</h6>
                 <h6 class="location">Las Vegas</h6>
@@ -216,26 +222,42 @@ export default {
     background-repeat: no-repeat;
     position: relative;
 
+    .page-margins{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        
+        .left-col{            
+            h4,h2,.description-text{
+                width: 100%;
+            }
+        
+        }
+        .right-col{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     button{
         margin-left: 0;
     }
 }
 
 .play-button{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 80%;
     display: flex;
-    color: black;
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: $primary_play_btn_background_color;
     border-radius: 50%;
     a{
         font-size: 50px;
         vertical-align: middle;
         margin: auto;
+        color: $primary__play_btn_icon_color;
         text-decoration: none;
     }
 }
@@ -288,12 +310,12 @@ export default {
                     }
 
                     h3{
-                        color: white;
+                        color: $hovering_box_h3_color;
                         width: 100%;
                         font-size: 35px;
                     }
                     h5{
-                        color: yellow;
+                        color: $hovering_box_h5_color;
                         width: 100%;
                         font-size: 25px;
 
@@ -307,7 +329,7 @@ export default {
                         .icon-formatting-center,
                         .icon-formatting-right{
                             font-size: 20px;
-                            color: white;
+                            color: $hovering_box_hr_color;
                         }
                         .icon-formatting-left{
                             left:53px;
@@ -352,7 +374,7 @@ export default {
                 
             }
         }
-        .testimanial-review{
+        .testimonial-review{
             display: flex;
             align-items: center;
             img{
@@ -363,11 +385,11 @@ export default {
             h6{
                 font-size: 20px;
                 padding: 0 15px;
-                color: white;
+                color: $testimonial_h6_color;
             }
             .location{
                 font-weight: 400;
-                color: lightgrey;
+                color: $testimonial_location_color;
                 padding-left: 0;
             }
         }
