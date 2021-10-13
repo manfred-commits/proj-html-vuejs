@@ -150,8 +150,72 @@
                     Visit my YouTube channel
                 </button>
             </div>
-            <div class="col-center">
-                
+            <div class="title-sec page-margins">
+                <h4>Featured playlists</h4>
+                <h5>
+                    View all videos
+                    <i class="fas fa-chevron-right"></i>
+                </h5>
+            </div>
+            <div class="col-center section-formatting page-margins">
+                <div class="workouts-container">
+
+                    <!-- thights & glutes -->
+                    <div class="workout-card">
+                        <div class="video-section background-img-video-1">
+                            <div class="play-button">
+                                <a href="#" class="play-icon">
+                                    <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="description-section">
+                            <h5>Thighs & glute workout</h5>
+                            <div class="description-workout">
+                                Increase your mobility
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- /thights & glutes --> 
+
+                    <!-- lift, firm & perk up -->
+                    <div class="workout-card">
+                        <div class="video-section background-img-video-2">
+                            <div class="play-button">
+                                <a href="#" class="play-icon">
+                                    <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="description-section">
+                            <h5>Lift,firm & perk up</h5>
+                            <div class="description-workout">
+                                Feel young again
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- /lift, firm & perk up --> 
+
+                    <!-- Slim & trim your waist -->
+                    <div class="workout-card">
+                        <div class="video-section background-img-video-3">
+                            <div class="play-button">
+                                <a href="#" class="play-icon">
+                                    <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="description-section">
+                            <h5>Slim & trim your waist </h5>
+                            <div class="description-workout">
+                                Shed those extra pounds
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- /Slim & trim your waist  --> 
+
+
+                </div>
             </div>
         </div>
     </section>
@@ -431,21 +495,27 @@ export default {
 
     .full-page-formatting{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
 
         .col-left{
             display: flex;
+            position: relative;
+            top: -50px;
             justify-content: center;
             align-items: center;
             width: 50%;
             background-image: url('../assets/images/service15-2x.jpg');
             background-size: cover;
-            height: 800px;border-radius: 5px 5px 60px 0;
+            height: 800px;
+            border-radius: 5px 5px 60px 0;
 
         }
         .col-right{
             display: flex;
+            flex-grow: 1;
+            padding: 0 90px;
             flex-wrap: wrap;
             justify-content: flex-start;
             width: 30%;
@@ -469,8 +539,79 @@ export default {
                 margin: 0;
             }
         }
-        .col-center{
+        .title-sec{
+            display: flex;
+            width: 100%;
+            padding: 40px 0 50px;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            h4{
+                font-size: 25px;
+            }
+            h5{
+                font-size: 18px;
             
+            }
+        }
+        .col-center{
+            width: 100%;
+            display: flex;
+            padding-top: 0;
+
+            .workouts-container{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .workout-card{
+                    width: calc(100% / 3 - 60px);
+                    display:flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .background-img-video-1{
+                        background-image: linear-gradient(360deg, $header_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video2-2x.jpg');
+                    }
+                    .background-img-video-2{
+                        background-image: linear-gradient(360deg, $header_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video7-2x.jpg');
+                    }
+                    .background-img-video-3{
+                        background-image: linear-gradient(360deg, $header_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video9-2x.jpg');
+                    }
+                    .video-section{
+                        display: flex;
+                        width: 100%;
+                        height: 280px;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-radius: 5px 5px 60px 0;
+                        .play-button{
+                            width: 60px;
+                            height: 60px;
+                            a{
+                                font-size: 20px;
+                            }
+                        }
+
+                    }
+                    .description-section{
+                        text-align: center;
+                        h5{
+                            padding: 20px 0 10px;
+                            font-size: 25px;
+                        }
+                        .description-workout{
+                            font-size: 20px;
+                            color: $tune_workout_video_description_color;
+                            font-weight: 500;
+                        }
+                    }
+                    
+                }
+            }
         }
     }
 
