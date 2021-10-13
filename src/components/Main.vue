@@ -42,7 +42,6 @@
     </section>
     <!-- /fitness list section -->
 
-
     <!-- endurance list section -->
     <section class="endurance-list">
         <div class="page-margins section-formatting">
@@ -127,6 +126,36 @@
 
     </section>
     <!-- endurance list section -->   
+
+    <!-- tune you workout section -->
+    <section class="tune-the-workout">
+        <div class="full-page-formatting">
+            <div class="col-left">
+                <div class="play-button">
+                    <a href="#" class="play-icon">
+                        <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>   
+            <div class="col-right">
+                <h4>Certified fitness professional</h4>
+                <h2>Take control of your health</h2>
+
+                <div class="description-text">
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.
+                </div>
+
+                <button class="button-page-3">
+                    <i class="fab fa-youtube"></i>
+                    Visit my YouTube channel
+                </button>
+            </div>
+            <div class="col-center">
+                
+            </div>
+        </div>
+    </section>
+    <!-- /tune you workout section -->
 
     <!-- mailing list section -->
     <section class="mailing-list">
@@ -394,6 +423,58 @@ export default {
             }
         }
     }
+
+}
+
+
+.tune-the-workout{
+
+    .full-page-formatting{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .col-left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            background-image: url('../assets/images/service15-2x.jpg');
+            background-size: cover;
+            height: 800px;border-radius: 5px 5px 60px 0;
+
+        }
+        .col-right{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 30%;
+            h4{
+
+                padding: 20px 0;
+                font-size: 30px;
+                color: $tune_workout_h4_color;
+
+            }
+            h2{
+                width: 100%;
+                font-size: 50px;
+            }
+            .description-text{
+                padding: 20px 0;
+                font-size: 25px;
+                color: $tune_workout_description_color;
+            }
+            .button-page-3{
+                margin: 0;
+            }
+        }
+        .col-center{
+            
+        }
+    }
+
+
 
 }
 
