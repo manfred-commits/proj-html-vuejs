@@ -383,6 +383,114 @@
     <!-- inspiration fail section -->
 
 
+     <!-- section sponsor -->
+    <section class="sponsors">
+        <div class="page-margins section-formatting">
+            <!-- yoga sponsor -->
+            <div class="card-container">
+                <div class="icon-container">
+                    <img src="../assets/images/sponsor-1-2x-200x103.png" alt="yoga sponsor">
+                </div>
+
+                <div class="sponsor-hr">
+                    <i class="icon-formatting-left fas fa-chevron-up"></i>
+                    <i class="icon-formatting-center fas fa-chevron-up"></i>
+                    <i class="icon-formatting-right fas fa-chevron-up"></i>
+                </div>
+
+                <p class="description-text">
+                    Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.
+                </p>
+
+                <a href="#">
+                    <h6>
+                        Visit Yoga Studio
+                        <i class="fas fa-chevron-right"></i>
+                    </h6>
+                </a>
+            </div>
+            <!-- /yoga sponsor -->
+
+            <!-- Fitness center sponsor -->
+            <div class="card-container">
+                <div class="icon-container">
+                    <img src="../assets/images/sponsor-2-2x-200x103.png" alt="yoga sponsor">
+                </div>
+
+                <div class="sponsor-hr">
+                    <i class="icon-formatting-left fas fa-chevron-up"></i>
+                    <i class="icon-formatting-center fas fa-chevron-up"></i>
+                    <i class="icon-formatting-right fas fa-chevron-up"></i>
+                </div>
+
+                <p class="description-text">
+                    Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.
+                </p>
+
+                <a href="#">
+                    <h6>
+                        Visit Yoga Studio
+                        <i class="fas fa-chevron-right"></i>
+                    </h6>
+                </a>
+            </div>
+            <!-- /Fitness center sponsor -->
+
+            <!-- Fitness club sponsor -->
+            <div class="card-container">
+                <div class="icon-container">
+                    <img src="../assets/images/sponsor-3-2x-200x103.png" alt="yoga sponsor">
+                </div>
+
+                <div class="sponsor-hr">
+                    <i class="icon-formatting-left fas fa-chevron-up"></i>
+                    <i class="icon-formatting-center fas fa-chevron-up"></i>
+                    <i class="icon-formatting-right fas fa-chevron-up"></i>
+                </div>
+
+                <p class="description-text">
+                    Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.
+                </p>
+
+                <a href="#">
+                    <h6>
+                        Visit Yoga Studio
+                        <i class="fas fa-chevron-right"></i>
+                    </h6>
+                </a>
+            </div>
+            <!-- Fitness club sponsor -->
+
+            <!-- Power gym sponsor -->
+            <div class="card-container">
+                <div class="icon-container">
+                    <img src="../assets/images/sponsor-4-2x-200x103.png" alt="yoga sponsor">
+                </div>
+
+                <div class="sponsor-hr">
+                    <i class="icon-formatting-left fas fa-chevron-up"></i>
+                    <i class="icon-formatting-center fas fa-chevron-up"></i>
+                    <i class="icon-formatting-right fas fa-chevron-up"></i>
+                </div>
+
+                <p class="description-text">
+                    Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.
+                </p>
+
+                <a href="#">
+                    <h6>
+                        Visit Yoga Studio
+                        <i class="fas fa-chevron-right"></i>
+                    </h6>
+                </a>
+            </div>
+            <!-- Power gym sponsor -->
+
+            
+        </div>
+    </section>
+    <!-- /section sponsor -->
+
   </main>
 </template>
 
@@ -906,6 +1014,76 @@ export default {
     }
 }
 
+.sponsors{
+    .page-margins{
+        display: flex;
+        justify-content: space-between;
 
+
+        .card-container{
+            cursor: pointer;
+            width: calc(100% / 4 - 10px);
+            border-radius: 5px 5px 5px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 0;
+
+            .icon-container{
+                width: 100%;
+                img{
+                    object-fit: contain;
+                    width: 160px;
+                }
+            }
+            .sponsor-hr{
+                padding: 20px 0;
+                margin-bottom: 30px;
+                width: 100%;
+                position: relative;
+
+                .icon-formatting-left,
+                .icon-formatting-center,
+                .icon-formatting-right{
+                    position: absolute;
+                    color: $sponsor_sec_hr_color;
+                    font-size: 30px;
+                    top: 50%;
+                    
+                }
+                .icon-formatting-left{
+                    left:calc(50% + -34px);
+                }
+                .icon-formatting-center{
+                    left:calc(50% + -13px);
+
+                }
+                .icon-formatting-right{
+                    left: calc(50% + 8px);
+                    
+                }
+                   
+            }
+            .description-text{
+                margin: auto;
+                color: $sponsor_sec_description_text_color;
+                width: 90%;
+                font-size: 20px;
+                padding-bottom: 40px;
+            }
+            a{
+                width: 100%;
+                text-decoration: none;
+                h6{ 
+                    text-align: center;
+                    color: black;
+                    font-size: 18px;
+
+                }
+                
+            }
+        }
+    }
+}
 
 </style>
