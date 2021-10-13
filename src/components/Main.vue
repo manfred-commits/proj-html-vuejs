@@ -491,6 +491,26 @@
     </section>
     <!-- /section sponsor -->
 
+    <!-- section best of the day -->
+    <section class="best-of-day">
+
+        <div class="page-margins section-formatting">
+
+            <div class="play-button">
+                <a href="#" class="play-icon">
+                    <i class="fas fa-caret-right"></i>
+                </a>
+            </div>
+            <h4>Crosfit workout of the day</h4>
+            <h5>November 15th,2019</h5>
+            <h6>
+                View all videos
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </h6>
+        </div>
+
+    </section>
+    <!-- /section best of the day -->
   </main>
 </template>
 
@@ -1086,4 +1106,37 @@ export default {
     }
 }
 
+.best-of-day{
+    background-image:linear-gradient(to bottom right, rgba(13, 15, 138, 0.719)  50%, rgba(129, 2, 19, 0.63) 80%),url('../assets/images/banner14-2x.jpg'); 
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .page-margins{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h4,h5,h6{
+            width: 100%;
+            text-align: center;
+        }
+        h4{
+            font-size: 60px;
+            padding: 20px 0 10px;
+            color: $best_of_day_h4_color;
+        }
+        h5{
+            font-size: 40px;
+            padding-bottom: 10px;
+            color: $best_of_day_h5_color;
+        }
+        h6{
+            font-size: 20px;
+            color: $best_of_day_h6_color;
+            cursor: pointer;
+        }
+    }
+    .section-formatting{
+        padding: 140px 0;
+    }
+}
 </style>
