@@ -302,6 +302,59 @@
     </section>
     <!-- cards list section -->
 
+    <!-- articles section -->
+    <section class="articles">
+        <div class="title-sec page-margins">
+                <h4>Latest articles</h4>
+                <h5>
+                    Read all articles
+                    <i class="fas fa-chevron-right"></i>
+                </h5>
+        </div>
+        <div class="col-center section-formatting page-margins">
+                <div class="workouts-container">
+
+                    <!-- The best protein shake -->
+                    <div class="workout-card">
+                        <div class="video-section background-img-video-1"></div>
+                        <div class="description-section">
+                            <h5>The best protein shake</h5>
+                            <div class="description-workout">
+                                By admin | November 26th,2019 | Gym
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- /The best protein shake --> 
+
+                    <!-- Ultimate cardio workout -->
+                    <div class="workout-card">
+                        <div class="video-section background-img-video-2"></div>
+                        <div class="description-section">
+                            <h5>Ultimate cardio workout</h5>
+                            <div class="description-workout">
+                                By admin | November 26th,2019 | Gym
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- /Ultimate cardio workout--> 
+
+                    <!-- New juices -->
+                    <div class="workout-card">
+                        <div class="video-section background-img-video-3"></div>
+                        <div class="description-section">
+                            <h5>New juices available now </h5>
+                            <div class="description-workout">
+                                By admin | November 26th,2019 | Gym
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- /New juices  --> 
+
+
+                </div>
+            </div>
+    </section>
+    <!-- /articles section -->
 
     <!-- inspiration fail section -->
     <section class="inspirational-fail">
@@ -732,6 +785,68 @@ export default {
         }
     }
 
+}
+.articles{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .title-sec{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0 40px;
+    }
+    .col-center{
+            width: 100%;
+            display: flex;
+            padding-top: 0;
+
+            .workouts-container{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .workout-card{
+                    width: calc(100% / 3 - 30px);
+                    display:flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .background-img-video-1{
+                        background-image:url('../assets/images/blog4-2x-1200x773.jpg');
+                    }
+                    .background-img-video-2{
+                        background-image: url('../assets/images/blog1-2x-1200x773.jpg');
+                    }
+                    .background-img-video-3{
+                        background-image: url('../assets/images/blog3-2x-1200x773.jpg');
+                    }
+                    .video-section{
+                        display: flex;
+                        width: 100%;
+                        height: 280px;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;                        
+
+                    }
+                    .description-section{
+                        width: 90%;
+                        margin: auto;
+                        h5{
+                            padding: 20px 0 0px;
+                            font-size: 28px;
+                        }
+                        .description-workout{
+                            font-size: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
 }
 
 .inspirational-fail{
