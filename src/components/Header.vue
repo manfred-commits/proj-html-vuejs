@@ -86,7 +86,7 @@ header{
 
                     @include header_components_verticalization;
                     justify-content: flex-end;
-
+                    
                     ul{
                         list-style: none;
                         display: flex;
@@ -114,14 +114,17 @@ header{
                         }
                         :hover a {
                             color: $header_hover_primary_text_color;
-;
+
                         }
-                    }
-    
+                    }    
                     
                     .icon-formatting{
                         font-size: 20px;
                         margin: 5px 10px;
+                        cursor: pointer;
+                    }
+                    .icon-formatting:hover{
+                        color: $header_hover_primary_text_color;
                     }
                     .icon-formatting:last-child{
                         margin-right: 0;

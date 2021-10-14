@@ -138,11 +138,11 @@
                 </div>
             </div>   
             <div class="col-right">
-                <h4>Certified fitness professional</h4>
-                <h2>Take control of your health</h2>
+                <h4>Tune up your workouts</h4>
+                <h2>The best health & fitnesss advice online</h2>
 
                 <div class="description-text">
-                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.
+                    Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.
                 </div>
 
                 <button class="button-page-3">
@@ -306,10 +306,12 @@
     <section class="articles">
         <div class="title-sec page-margins">
                 <h4>Latest articles</h4>
-                <h5>
-                    Read all articles
-                    <i class="fas fa-chevron-right"></i>
-                </h5>
+                <a href="#">
+                    <h5>
+                        Read all articles
+                        <i class="fas fa-chevron-right"></i>
+                    </h5>
+                </a>
         </div>
         <div class="col-center section-formatting page-margins">
                 <div class="workouts-container">
@@ -429,7 +431,7 @@
 
                 <a href="#">
                     <h6>
-                        Visit Yoga Studio
+                        Join Fitness Center
                         <i class="fas fa-chevron-right"></i>
                     </h6>
                 </a>
@@ -454,7 +456,7 @@
 
                 <a href="#">
                     <h6>
-                        Visit Yoga Studio
+                        Learn about FC
                         <i class="fas fa-chevron-right"></i>
                     </h6>
                 </a>
@@ -479,7 +481,7 @@
 
                 <a href="#">
                     <h6>
-                        Visit Yoga Studio
+                        Visit Power Gym
                         <i class="fas fa-chevron-right"></i>
                     </h6>
                 </a>
@@ -620,7 +622,7 @@ export default {
             .basic-card{
                 display: flex;
                 box-shadow: 1px 2px 15px $basic_card_boxshadow_color;
-
+                transition: transform 0.5s ease-in-out;
                 position: relative;
                 width: calc(100% /3 - 80px);
                 height: 500px;
@@ -684,8 +686,11 @@ export default {
                 }
 
             }
+            .basic-card:hover{
+                transform: scale(1.1);
+            }
         }
-
+        
         h2{
             width: 80%;
             font-size: 50px;
@@ -756,7 +761,10 @@ export default {
             background-size: cover;
             height: 800px;
             border-radius: 5px 5px 60px 0;
-
+            transition: transform 0.5s ease-in-out;
+        }
+        .col-left:hover{
+            transform: scale(1.1);
         }
         .col-right{
             display: flex;
@@ -809,12 +817,13 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                .workout-card{
+                .workout-card{                    
+                    transition: transform 0.5s ease-in-out;
                     width: calc(100% / 3 - 60px);
                     display:flex;
                     flex-wrap: wrap;
                     justify-content: center;
-
+                    
                     .background-img-video-1{
                         background-image: linear-gradient(360deg, $workout_card_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video2-2x.jpg');
                     }
@@ -834,6 +843,7 @@ export default {
                         background-position: center;
                         background-repeat: no-repeat;
                         border-radius: 5px 5px 60px 0;
+
                         .play-button{
                             width: 60px;
                             height: 60px;
@@ -857,6 +867,10 @@ export default {
                     }
                     
                 }
+                .workout-card:hover{
+                    transform: scale(1.1);
+                }
+                
             }
         }
     }
@@ -891,6 +905,7 @@ export default {
             flex-wrap: wrap;
             text-align: center;
             padding: 60px 0;
+            transition: transform 0.5s ease-in-out;
 
             h3,h4,p,h6,.icon-container{
                 width: 100%;
@@ -918,9 +933,13 @@ export default {
                 
             }
         }
+        .card-container:hover{
+            transform: scale(1.1);
+        }
     }
 
 }
+
 .articles{
     width: 100%;
     display: flex;
@@ -931,6 +950,11 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 80px 0 40px;
+
+        a{
+            color: $articles_sec_title_text_color;
+            text-decoration: none;
+        }
     }
     .col-center{
             width: 100%;
@@ -942,10 +966,12 @@ export default {
                 justify-content: space-between;
                 width: 100%;
                 .workout-card{
+                    cursor: pointer;
                     width: calc(100% / 3 - 30px);
                     display:flex;
                     flex-wrap: wrap;
                     justify-content: center;
+                    transition: transform 0.5s ease-in-out;
 
                     .background-img-video-1{
                         background-image:url('../assets/images/blog4-2x-1200x773.jpg');
@@ -979,6 +1005,9 @@ export default {
                         }
                     }
                     
+                }
+                .workout-card:hover{
+                    transform: scale(1.1);
                 }
             }
         }
@@ -1055,7 +1084,7 @@ export default {
             flex-wrap: wrap;
             text-align: center;
             padding: 0;
-
+            transition: transform 0.5s ease-in-out;
             .icon-container{
                 width: 100%;
                 img{
@@ -1109,6 +1138,9 @@ export default {
                 }
                 
             }
+        }
+        .card-container:hover{
+            transform: scale(1.1);
         }
     }
 }
