@@ -628,13 +628,13 @@ export default {
                 height: 500px;
                 border-radius: 5px 5px 60px 0;
                 overflow: hidden;
-
+    
                 img{
                     object-fit: cover;
                     width: 100%;
                 }
                 .hovering_box{
-                   
+                    cursor: pointer;
                     position:absolute;
                     top: 0;
                     left: 0;
