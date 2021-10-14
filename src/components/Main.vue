@@ -535,14 +535,14 @@ export default {
 
     h4{
         font-size: 30px;
-        color: $mailing_secondary_text_color;
+        color: $general_secondary_text_color;
     }
     h2{
         font-size: 70px;
-        color: $mailing_primary_text_color;
+        color: $general_primary_text_color;
     }
     .description-text{
-        color: $mailing_description_text_color;
+        color: $general_description_text_color;
         font-size: 25px;
         margin-bottom: 50px;
     }
@@ -587,6 +587,8 @@ export default {
     height: 120px;
     background-color: $primary_play_btn_background_color;
     border-radius: 50%;
+    transition: transform .5s ease-in-out;
+
     a{
         font-size: 50px;
         vertical-align: middle;
@@ -595,10 +597,13 @@ export default {
         text-decoration: none;
     }
 }
+.play-button:hover{
+    transform: scale(1.1);
+}
 
 
 .endurance-list{
-    background-image: linear-gradient(to bottom right, blue , red);
+    background-image: linear-gradient(to bottom right, $background_endurance_primary_color , $background_endurance_secondary_color);
     .section-formatting{
         text-align: center;
         display: flex;
@@ -614,7 +619,7 @@ export default {
 
             .basic-card{
                 display: flex;
-                box-shadow: 1px 2px 15px black;
+                box-shadow: 1px 2px 15px $basic_card_boxshadow_color;
 
                 position: relative;
                 width: calc(100% /3 - 80px);
@@ -692,7 +697,7 @@ export default {
             .icon-formatting-center,
             .icon-formatting-right{
                 position: absolute;
-                color: $yellor_page_color;
+                color: $yellor_icon_color;
                 font-size: 30px;
                 top: 50%;
                 
@@ -811,13 +816,13 @@ export default {
                     justify-content: center;
 
                     .background-img-video-1{
-                        background-image: linear-gradient(360deg, $header_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video2-2x.jpg');
+                        background-image: linear-gradient(360deg, $workout_card_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video2-2x.jpg');
                     }
                     .background-img-video-2{
-                        background-image: linear-gradient(360deg, $header_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video7-2x.jpg');
+                        background-image: linear-gradient(360deg, $workout_card_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video7-2x.jpg');
                     }
                     .background-img-video-3{
-                        background-image: linear-gradient(360deg, $header_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video9-2x.jpg');
+                        background-image: linear-gradient(360deg, $workout_card_background_color -15%, rgba(0, 0, 1, 0.1) 60%), url('../assets/images/video9-2x.jpg');
                     }
                     .video-section{
                         display: flex;
@@ -1009,7 +1014,7 @@ export default {
             .icon-formatting-center,
             .icon-formatting-right{
                 position: absolute;
-                color: $yellor_page_color;
+                color: $yellor_icon_color;
                 font-size: 30px;
                 top: 50%;
                 
@@ -1027,7 +1032,7 @@ export default {
             }
         }    
         .description-text{            
-            color: $mailing_primary_text_color;
+            color: $inspirational_description_text_color;
             font-size: 25px;
         }
         .button-page{
@@ -1109,7 +1114,7 @@ export default {
 }
 
 .best-of-day{
-    background-image:linear-gradient(to bottom right, rgba(13, 15, 138, 0.719)  50%, rgba(129, 2, 19, 0.63) 80%),url('../assets/images/banner14-2x.jpg'); 
+    background-image:linear-gradient(to bottom right, $best_of_day_primary_background_color 50%, $best_of_day_secondary_background_color 80%),url('../assets/images/banner14-2x.jpg'); 
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;

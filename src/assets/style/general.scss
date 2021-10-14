@@ -2,11 +2,15 @@
 @import 'bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;700;900&display=swap');
 
+
+// general rules
+
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
+// buttons/inputs tags rules
 button{    
     border-radius: 60px;
     color: $primary_btn_color;
@@ -14,7 +18,8 @@ button{
     border: 0;
     margin: 0 15px;
     padding: 0 30px;
-    font-size: 20px;
+    font-size: $general_btn_font_size;
+    transition: transform .5s ease-in-out;
 }
 
 .button-header{
@@ -37,7 +42,10 @@ button{
     color: $primary_btn_3_text_color;
 
 }
-
+button:hover {
+    transform: scale(1.1);
+    
+}
 input{
     min-width: 500px;
     min-height: 60px;
@@ -47,12 +55,11 @@ input{
     padding-left: 30px;
     margin: 20px 0 40px;
 }
+// /buttons/inputs tags rules
 
-
-
-
+// custom hr 
 .fitness-hr{
-    color: $yellor_page_color;
+    color: $yellor_icon_color;
     font-size: 35px;
     position: relative;
     height: 80px;
@@ -72,5 +79,9 @@ input{
         left: 64px;
     }
 }
+// /custom hr 
+
+// /general rules
+
 
 

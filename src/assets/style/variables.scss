@@ -1,43 +1,59 @@
 // general rules
-$yellor_page_color:#fff941;
-// /general rules
+
+$yellor_icon_color:#fff941;
 
 
 
 // button section
-$primary_btn_color:#f3ffff;
 
+// colors
+$primary_btn_color:#f3ffff;
 $secondary_btn_color:#93939f;
+$primary_btn_background_color:#4154ff;
+// /colors
+
+// font-size
+$general_btn_font_size: 20px;
+// font-size
+
 
 // btn-2
 $primary_btn_2_color:transparent;
-
-
 $btn_2_border-color:#93939f;
 
 // /btn-2
 
 // btn-3
 $primary_btn_3_color:red;
-
 $primary_btn_3_text_color:#fff;
 
 // /btn-3
-
-$primary_btn_background_color:#4154ff;
-
-
 
 
 // play button 
 $primary_play_btn_background_color:white;
 $primary__play_btn_icon_color:#4154ff;
 
-
 // /play button 
-
-
 // /button section
+
+// /general rules
+
+
+
+// header section
+
+$header_background_color:#060607;
+$header_primary_text_color:#93939f;
+$header_hover_primary_text_color:#fff;
+
+
+@mixin header_components_verticalization {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 
 
 // popup section
@@ -49,38 +65,27 @@ $primary_background_popup_color_text:black;
 
 // /popup section
 
-
-// /general rules
-
-
-
-
-// header section
-$header_background_color:#060607;
-$header_primary_text_color:#93939f;
-$header_hover_primary_text_color:#fff;
-
-
-
-@mixin header_components_verticalization {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
 // /header section
 
 
-// mailing list section
 
-$mailing_primary_text_color:#fff;
-$mailing_secondary_text_color:#ff414b;
-$mailing_description_text_color:#93939f;
+// main section
+
+// section-formatting
+
+$general_primary_text_color:#fff;
+
+$general_secondary_text_color:#ff414b;
+$general_description_text_color:#93939f;
 
 
-// /mailing list section
+// /section-formatting
 
 // endurance list
+$background_endurance_primary_color:blue;
+$background_endurance_secondary_color:red;
+
+$basic_card_boxshadow_color:black;
 
 $hovering_box_h3_color:#fff;
 $hovering_box_h5_color:#fff941;
@@ -96,21 +101,23 @@ $testimonial_location_color:#b2b2b4;
 $tune_workout_h4_color:#4154ff;
 $tune_workout_description_color:black;
 
+$workout_card_background_color:#060607;
+
 // video card text section
 $tune_workout_video_description_color:#4154ff;
 
 // /video card text section
 
-// best of day section
-$best_of_day_h4_color:#fff;
-$best_of_day_h5_color:#fff941;
-$best_of_day_h6_color:#fff;
-
-
-
-// /best of day section
-
 // /tune your workout list
+
+
+
+// mailing list section
+
+// /mailing list section
+
+
+
 
 // cards section
 $card_sec_background_color:#060607;
@@ -122,16 +129,42 @@ $card_sec_description_text_color:#bcbcbc;
 // /cards section
 
 
+// articles section
+
+
+// /articles section
+
+
+// inspirational section
+$inspirational_description_text_color:#fff;
+
+
+// /inspirational section
+
+
 // sponsor section
 $sponsor_sec_description_text_color:rgb(61, 61, 61);
 $sponsor_sec_hr_color:#4154ff;
 
-
 // /sponsor section
+
+
+// best of day section
+$best_of_day_primary_background_color:rgba(13, 15, 138, 0.719);
+$best_of_day_secondary_background_color:rgba(129, 2, 19, 0.63);
+
+$best_of_day_h4_color:#fff;
+$best_of_day_h5_color:#fff941;
+$best_of_day_h6_color:#fff;
+
+// /best of day section
+
+// /main section
 
 
 // footer section
 $footer_primary_text_color:#fff;
 $footer_secondary_text_color:#93939f;
 $footer_hr_color:#2c2a35;
+$footer_icons_color:#ff414b;
 // /footer section

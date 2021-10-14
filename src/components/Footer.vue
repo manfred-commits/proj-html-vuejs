@@ -99,7 +99,7 @@ footer{
 
                 .social-link-formatting{
                     font-size: 20px;
-                    color: $mailing_secondary_text_color;
+                    color: $footer_icons_color;
                     margin: 0 10px;
                 }
 
