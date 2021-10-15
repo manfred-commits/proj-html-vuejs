@@ -90,12 +90,14 @@ header{
                     ul{
                         list-style: none;
                         display: flex;
+                        flex-grow: 1;
+                        justify-content: end;
                         align-items: center;
                         margin: 0;
                         
     
                         li{
-                            margin: 0 20px;
+                            margin: 0 15px;
                             
                             a{
                                 text-decoration: none;
